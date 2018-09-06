@@ -130,5 +130,11 @@ db.runCommand( {
 
 * 不能指定验证对于 **system.*** 集合
 
- 
+
+
+#### 六、Bypass Document Validation（绕开文档验证）
+
+用户可以通过使用一些命令的 **bypassDocumentValidation** 参数绕开文档校验。
+
+针对已经启动访问控制的部署实例，要想绕开文档验证，具有权限的用户必须拥有 bypassDocumentValidation 的权限；内置的 dbAdmin 和 restore 默认拥有此权限
 
